@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/buttonZ"
+        android:layout_width="129dp"
+        android:layout_height="123dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/zebra" />
+
+    <ImageButton
+        android:id="@+id/buttonR"
+        android:layout_width="127dp"
+        android:layout_height="126dp"
+        app:layout_constraintBottom_toTopOf="@id/buttonS"
+        app:layout_constraintEnd_toEndOf="@+id/buttonS"
+        app:layout_constraintLeft_toRightOf="@id/buttonZ"
+        app:layout_constraintTop_toTopOf="@+id/buttonZ"
+        app:layout_constraintVertical_bias="0.4"
+        app:srcCompat="@drawable/racoon" />
+
+    <ImageButton
+        android:id="@+id/buttonT"
+        android:layout_width="129dp"
+        android:layout_height="118dp"
+        app:layout_constraintStart_toStartOf="@+id/buttonZ"
+        app:layout_constraintTop_toBottomOf="@+id/buttonZ"
+        app:srcCompat="@drawable/tiger" />
+
+    <ImageButton
+        android:id="@+id/buttonS"
+        android:layout_width="125dp"
+        android:layout_height="117dp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonT"
+        app:layout_constraintLeft_toRightOf="@id/buttonT"
+        app:layout_constraintStart_toEndOf="@+id/buttonT"
+        app:layout_constraintTop_toBottomOf="@+id/buttonZ"
+        app:srcCompat="@drawable/sloth" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:shadowColor="#000"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="2"
+        android:text="Let's Articulate"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/buttonW"
+        android:layout_width="131dp"
+        android:layout_height="124dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonP"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/buttonR"
+        app:layout_constraintTop_toTopOf="@+id/buttonR"
+        app:srcCompat="@drawable/walrus" />
+
+    <ImageButton
+        android:id="@+id/buttonL"
+        android:layout_width="122dp"
+        android:layout_height="124dp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonP"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/buttonW"
+        app:layout_constraintTop_toTopOf="@+id/buttonW"
+        app:srcCompat="@drawable/lion" />
+
+    <ImageButton
+        android:id="@+id/buttonP"
+        android:layout_width="121dp"
+        android:layout_height="118dp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonB"
+        app:layout_constraintStart_toEndOf="@+id/buttonB"
+        app:srcCompat="@drawable/panda" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@android:style/Widget.Holo.Light.TextView"
+        android:layout_width="235dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="12dp"
+        android:background="#00F8F8F7"
+        android:text="Choose a Letter:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/buttonB"
+        android:layout_width="130dp"
+        android:layout_height="116dp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonS"
+        app:layout_constraintStart_toEndOf="@+id/buttonS"
+        app:srcCompat="@drawable/bear" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
